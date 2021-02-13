@@ -47,8 +47,8 @@ class _DashboardState extends State<Dashboard> {
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(20.0),
-                      bottomRight: Radius.circular(20.0)),
+                      bottomLeft: Radius.circular(15.0),
+                      bottomRight: Radius.circular(15.0)),
                   color: Color(0xff43B485),
                 ),
                 child: Padding(
@@ -78,7 +78,7 @@ class _DashboardState extends State<Dashboard> {
                     ),
                   ),
                   Expanded(
-                    child:Container(
+                    child: Container(
                       padding: EdgeInsets.only(bottom: 10.0),
                       child: ScheduleScroller(),
                     ),

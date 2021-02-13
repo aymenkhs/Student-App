@@ -11,16 +11,15 @@ import 'package:mobile_frontend/menu_elements/todo_list.dart';
 import 'package:mobile_frontend/menu_elements/notifications.dart';
 import 'package:mobile_frontend/menu_elements/login.dart';
 import 'package:mobile_frontend/menu_elements/register.dart';
-
+import 'package:mobile_frontend/menu_elements/welcome.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(
-      fontFamily: "Lato"
-    ),
+    theme: ThemeData(fontFamily: "Lato"),
     initialRoute: '/',
     routes: {
       '/': (context) => Home(),
+      '/welcome': (context) => Welcome(),
       '/register': (context) => Register(),
       '/login': (context) => Login(),
       '/profile': (context) => Profile(),

@@ -1,38 +1,42 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_frontend/dart_src/tasks.dart';
 
-
 class ScheduleScroller extends StatefulWidget {
   @override
   _ScheduleScrollerState createState() => _ScheduleScrollerState();
 }
 
 class _ScheduleScrollerState extends State<ScheduleScroller> {
-
   List<Task> tasks = [
     Task(
         title: 'Tasks',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
         date: DateTime.parse("1969-07-20 20:18:04Z")),
     Task(
         title: 'Notifications',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
         date: DateTime.parse("1969-07-20 20:18:04Z")),
     Task(
         title: 'Tasks',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
         date: DateTime.parse("1969-07-20 20:18:04Z")),
     Task(
         title: 'Notifications',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
         date: DateTime.parse("1969-07-20 20:18:04Z")),
     Task(
         title: 'Tasks',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
         date: DateTime.parse("1969-07-20 20:18:04Z")),
     Task(
         title: 'Notifications',
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In fringilla convallis augue in gravida",
         date: DateTime.parse("1969-07-20 20:18:04Z")),
   ];
 
@@ -53,7 +57,7 @@ class _ScheduleScrollerState extends State<ScheduleScroller> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(right:12.0),
+                margin: EdgeInsets.only(right: 12.0),
                 height: 80,
                 width: 5,
                 color: Color(0xff43B485),
@@ -70,7 +74,7 @@ class _ScheduleScrollerState extends State<ScheduleScroller> {
                           color: Colors.black,
                         ),
                         Container(
-                          margin: EdgeInsets.only(left:5.0),
+                          margin: EdgeInsets.only(left: 5.0),
                           child: Text(
                             task.title,
                             style: TextStyle(
@@ -101,8 +105,7 @@ class _ScheduleScrollerState extends State<ScheduleScroller> {
                 ),
               ),
             ],
-          )
-      ),
+          )),
     );
   }
 
