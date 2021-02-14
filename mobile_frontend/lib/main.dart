@@ -15,10 +15,15 @@ import 'package:mobile_frontend/menu_elements/welcome.dart';
 
 void main() {
   runApp(MaterialApp(
-    theme: ThemeData(fontFamily: "Lato"),
+    theme: ThemeData(
+      fontFamily: "Lato",
+      primaryColor: Color(0xff43B485),
+      accentColor: Colors.greenAccent,
+    ),
     initialRoute: '/',
     routes: {
-      '/': (context) => Home(),
+      '/': (context) => Welcome(),
+      'home/': (context) => Home(),
       '/welcome': (context) => Welcome(),
       '/register': (context) => Register(),
       '/login': (context) => Login(),
@@ -32,16 +37,4 @@ void main() {
       '/settings': (context) => Settings(),
     },
   ));
-}
-
-class Menu extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home page'),
-      ),
-      drawer: MainDrawer(),
-    );
-  }
 }
